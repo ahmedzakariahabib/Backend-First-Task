@@ -4,21 +4,21 @@
     "fname": "ahmed",
     "lname": "zakaria",
     "city": "menofia",
-    "age": "28"
+    "age": "22"
   },
   {
     "id": "2",
     "fname": "mohamed",
     "lname": "ali",
     "city": "menofia",
-    "age": "28"
+    "age": "23"
   },
   {
     "id": "3",
-    "fname": "mohamed",
+    "fname": "ahmed",
     "lname": "ali",
-    "city": "menofia",
-    "age": "28"
+    "city": "mostafa",
+    "age": "24"
   },
   {
     "id": "4",
@@ -67,6 +67,6 @@
     "fname": "ahmed",
     "lname": "zakaria",
     "city": "menofia",
-    "age": "28"
+    "age": "22"
   }
 ]

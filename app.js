@@ -1,7 +1,6 @@
-const data10 = require("./data10");
+const dataMethods = require("./dataMethods");
 
 const fs = require("fs");
-const { type } = require("os");
 
 const yargs = require("yargs");
 
@@ -36,7 +35,7 @@ yargs.command({
     },
   },
   handler: (x) => {
-    data10.addPerson(x.id, x.fname, x.lname, x.city, x.age);
+    dataMethods.addPerson(x.id, x.fname, x.lname, x.city, x.age);
   },
 });
 
@@ -51,7 +50,7 @@ yargs.command({
     },
   },
   handler: (x) => {
-    data10.deleteOneData(x.id);
+    dataMethods.deleteOneData(x.id);
   },
 });
 
@@ -60,7 +59,7 @@ yargs.command({
   describe: "to delete an items",
 
   handler: () => {
-    data10.deleteAllData();
+    dataMethods.deleteAllData();
   },
 });
 
@@ -75,7 +74,7 @@ yargs.command({
     },
   },
   handler: (x) => {
-    data10.readDataForSpecificPerson(x.id);
+    dataMethods.readDataForSpecificPerson(x.id);
   },
 });
 
@@ -84,7 +83,7 @@ yargs.command({
   describe: "to read an items",
 
   handler: () => {
-    data10.readDataForAllPerson();
+    dataMethods.readDataForAllPerson();
   },
 });
 
